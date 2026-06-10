@@ -1,0 +1,327 @@
+#kiwl-support-root {
+  --kiwl-primary: #1e3a8a;
+  --kiwl-primary-dark: #1e40af;
+  --kiwl-accent: #3b82f6;
+  --kiwl-green: #22c55e;
+  --kiwl-green-dark: #16a34a;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 99999;
+  direction: ltr;
+}
+
+#kiwl-support-root.rtl {
+  right: auto;
+  left: 24px;
+  direction: rtl;
+}
+
+.kiwl-support-toggle {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--kiwl-primary) 0%, var(--kiwl-accent) 100%);
+  color: #fff;
+  box-shadow: 0 6px 24px rgba(30, 58, 138, 0.45);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.2s, box-shadow 0.2s;
+  position: relative;
+}
+
+.kiwl-support-toggle:hover {
+  transform: scale(1.06);
+  box-shadow: 0 8px 28px rgba(30, 58, 138, 0.55);
+}
+
+.kiwl-support-toggle svg {
+  width: 28px;
+  height: 28px;
+}
+
+.kiwl-support-toggle .kiwl-badge {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 14px;
+  height: 14px;
+  background: #22c55e;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  animation: kiwl-pulse 2s infinite;
+}
+
+#kiwl-support-root.rtl .kiwl-support-toggle .kiwl-badge {
+  right: auto;
+  left: 2px;
+}
+
+@keyframes kiwl-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.15); opacity: 0.85; }
+}
+
+.kiwl-support-panel {
+  position: absolute;
+  bottom: 76px;
+  right: 0;
+  width: 370px;
+  max-width: calc(100vw - 32px);
+  max-height: 520px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.18);
+  display: none;
+  flex-direction: column;
+  overflow: hidden;
+  animation: kiwl-slide-up 0.28s ease;
+}
+
+#kiwl-support-root.rtl .kiwl-support-panel {
+  right: auto;
+  left: 0;
+}
+
+.kiwl-support-panel.open {
+  display: flex;
+}
+
+@keyframes kiwl-slide-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.kiwl-support-header {
+  background: linear-gradient(135deg, var(--kiwl-primary) 0%, var(--kiwl-accent) 100%);
+  color: #fff;
+  padding: 16px 18px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.kiwl-support-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+
+.kiwl-support-header-text h3 {
+  margin: 0;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.kiwl-support-header-text p {
+  margin: 2px 0 0;
+  font-size: 12px;
+  opacity: 0.9;
+}
+
+.kiwl-support-close {
+  margin-left: auto;
+  background: none;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  padding: 4px;
+  opacity: 0.85;
+  line-height: 1;
+}
+
+#kiwl-support-root.rtl .kiwl-support-close {
+  margin-left: 0;
+  margin-right: auto;
+}
+
+.kiwl-support-close:hover { opacity: 1; }
+
+.kiwl-support-messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background: #f8fafc;
+  min-height: 200px;
+  max-height: 300px;
+}
+
+.kiwl-msg {
+  max-width: 88%;
+  padding: 10px 14px;
+  border-radius: 14px;
+  font-size: 13.5px;
+  line-height: 1.55;
+  color: #1e293b;
+  animation: kiwl-fade-in 0.3s ease;
+}
+
+.kiwl-msg.bot {
+  align-self: flex-start;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-bottom-left-radius: 4px;
+}
+
+#kiwl-support-root.rtl .kiwl-msg.bot {
+  align-self: flex-end;
+  border-bottom-left-radius: 14px;
+  border-bottom-right-radius: 4px;
+}
+
+.kiwl-msg.user {
+  align-self: flex-end;
+  background: var(--kiwl-primary);
+  color: #fff;
+  border-bottom-right-radius: 4px;
+}
+
+#kiwl-support-root.rtl .kiwl-msg.user {
+  align-self: flex-start;
+  border-bottom-right-radius: 14px;
+  border-bottom-left-radius: 4px;
+}
+
+.kiwl-msg.page-ref {
+  background: #eff6ff;
+  border-color: #bfdbfe;
+  font-size: 12.5px;
+}
+
+.kiwl-msg.page-ref strong {
+  display: block;
+  color: var(--kiwl-primary);
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+
+@keyframes kiwl-fade-in {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.kiwl-typing {
+  align-self: flex-start;
+  display: flex;
+  gap: 4px;
+  padding: 12px 16px;
+  background: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 14px;
+}
+
+.kiwl-typing span {
+  width: 7px;
+  height: 7px;
+  background: #94a3b8;
+  border-radius: 50%;
+  animation: kiwl-dot 1.2s infinite;
+}
+
+.kiwl-typing span:nth-child(2) { animation-delay: 0.2s; }
+.kiwl-typing span:nth-child(3) { animation-delay: 0.4s; }
+
+@keyframes kiwl-dot {
+  0%, 60%, 100% { transform: translateY(0); opacity: 0.4; }
+  30% { transform: translateY(-4px); opacity: 1; }
+}
+
+.kiwl-support-actions {
+  padding: 12px 16px 16px;
+  background: #fff;
+  border-top: 1px solid #e2e8f0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.kiwl-quick-btns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.kiwl-quick-btn {
+  flex: 1;
+  min-width: calc(50% - 4px);
+  padding: 9px 12px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #fff;
+  color: var(--kiwl-primary);
+  font-size: 12.5px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s, border-color 0.15s;
+  text-align: center;
+}
+
+.kiwl-quick-btn:hover {
+  background: #eff6ff;
+  border-color: var(--kiwl-accent);
+}
+
+.kiwl-quick-btn:disabled {
+  opacity: 0.5;
+  cursor: default;
+}
+
+.kiwl-wa-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 100%;
+  padding: 13px 16px;
+  border: none;
+  border-radius: 12px;
+  background: var(--kiwl-green);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.kiwl-wa-btn:hover {
+  background: var(--kiwl-green-dark);
+  color: #fff;
+}
+
+.kiwl-wa-btn svg {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+.kiwl-wa-btn.hidden {
+  display: none;
+}
+
+@media (max-width: 480px) {
+  #kiwl-support-root {
+    bottom: 16px;
+    right: 16px;
+  }
+  #kiwl-support-root.rtl {
+    left: 16px;
+  }
+  .kiwl-support-panel {
+    width: calc(100vw - 32px);
+  }
+}
