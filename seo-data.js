@@ -421,6 +421,21 @@ window.SEO_CONFIG = {
       "imageUrl": "https://hollowblowmolders.com/images/blog/post-8.jpeg",
       "keywords": "blow molding industry news, blow molding technology updates, Lightweight Blow Molding Technology Deve, KIWL Machinery",
       "tier": "longtail"
+    },
+    "/blog/9": {
+      "title": "Multi-Layer Blow Molding for Chemical Container Production | KIWL Blog",
+      "description": "Multi-layer blow molding for chemical containers: barrier layers, HDPE structures, and production tips for drums, jerry cans and IBC inner liners.",
+      "type": "article",
+      "image": "images/blog/post-9.jpeg",
+      "body": "Multi-layer blow molding enables chemical producers to combine HDPE structural layers with barrier resins for agrochemical and industrial packaging. Coextrusion blow molding machines form 2–6 layer parisons in a single cycle, reducing permeation versus monolayer drums. KIWL Machinery supports E-series and U-series platforms configured for fluorination-ready or EVOH barrier structures. Key process parameters include layer ratio control, melt temperature profiling, and pinch-off design for drop-test compliance. Plants should validate stack drop, hydraulic burst, and chemical compatibility before UN-rated shipments. Preventive mold maintenance and gravimetric regrind management keep layer ratios stable across long runs. KIWL Machinery continues to invest in blow molding innovation, manufacturing excellence, and global customer support from our Shanghai production base.",
+      "article": {
+        "headline": "Multi-Layer Blow Molding for Chemical Container Production",
+        "datePublished": "2026-06-14",
+        "dateModified": "2026-06-14"
+      },
+      "imageUrl": "https://hollowblowmolders.com/images/blog/post-9.jpeg",
+      "keywords": "multi-layer blow molding, chemical container blow molding, coextrusion blow molding machine, KIWL Machinery",
+      "tier": "longtail"
     }
   },
   "pagesAr": {
@@ -840,6 +855,21 @@ window.SEO_CONFIG = {
       },
       "body": "Topology optimization and nano-enhanced materials achieve significant weight reduction while maintaining structural integrity, lowering material and logistics costs. KIWL Machinery continues to invest in blow molding innovation, manufacturing excellence, and global customer support from our Shanghai production base.",
       "keywords": "أخبار صناعة قولبة النفخ, تحديثات تكنولوجيا قولبة النفخ, Lightweight Blow Molding Technology Deve, آلات KIWL",
+      "tier": "longtail"
+    },
+    "/blog/9": {
+      "title": "Multi-Layer Blow Molding for Chemical Container Production | مدونة KIWL",
+      "description": "Multi-layer blow molding for chemical containers: barrier layers, HDPE structures, and production tips for drums, jerry cans and IBC inner liners.",
+      "type": "article",
+      "image": "images/blog/post-9.jpeg",
+      "imageUrl": "https://hollowblowmolders.com/images/blog/post-9.jpeg",
+      "article": {
+        "headline": "Multi-Layer Blow Molding for Chemical Container Production",
+        "datePublished": "2026-06-14",
+        "dateModified": "2026-06-14"
+      },
+      "body": "Multi-layer blow molding enables chemical producers to combine HDPE structural layers with barrier resins for agrochemical and industrial packaging. Coextrusion blow molding machines form 2–6 layer parisons in a single cycle, reducing permeation versus monolayer drums. KIWL Machinery supports E-series and U-series platforms configured for fluorination-ready or EVOH barrier structures. Key process parameters include layer ratio control, melt temperature profiling, and pinch-off design for drop-test compliance. Plants should validate stack drop, hydraulic burst, and chemical compatibility before UN-rated shipments. Preventive mold maintenance and gravimetric regrind management keep layer ratios stable across long runs. KIWL Machinery continues to invest in blow molding innovation, manufacturing excellence, and global customer support from our Shanghai production base.",
+      "keywords": "أخبار صناعة قولبة النفخ, Multi-Layer Blow Molding for Chemical Co, آلات KIWL",
       "tier": "longtail"
     }
   }
